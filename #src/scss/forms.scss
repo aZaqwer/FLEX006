@@ -393,6 +393,11 @@ textarea.input {
     align-items: center;
     color: $lightTextColor;
     background-color: $buttonColor;
+    @media (min-width: $md3+px) {
+        &:hover {
+            background-color: #1b78ad;
+        }
+    }
 }
 
 //</RANGE>====================================================================================================

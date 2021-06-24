@@ -126,6 +126,11 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 22 / 14 * 100%;
+        @media (min-width: $md3+px) {
+            &:hover {
+                background-color: #737373;
+            }
+        }
     }
 }
 
@@ -229,6 +234,11 @@
             text-align: center;
             color: #252b42;
         }
+        @media (min-width: $md3+px) {
+            &:hover {
+                color: $buttonColor;
+            }
+        }
     }
 }
 .right {
@@ -242,6 +252,11 @@
         margin: 0px 45px 0px 0px;
         @media (max-width: $md3+px) {
             display: none;
+        }
+        @media (min-width: $md3+px) {
+            &:hover {
+                color: $buttonColor;
+            }
         }
     }
 
