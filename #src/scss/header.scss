@@ -3,8 +3,7 @@
     // .header__content
     height: 670px;
     background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%),
-        url("../img/br-header.jpg") 0 0 / 100% auto no-repeat;
-    margin: 0px 0px 100px 0px;
+        url("../img/br-header.jpg") 0 0 / 100% 100% no-repeat;
     @media (max-width: $md3+px) {
         background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%),
             url("../img/br-header.jpg") 65% / cover no-repeat;
