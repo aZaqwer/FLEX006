@@ -25,7 +25,7 @@ $fontSize: 14;
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minWidth: 320px;
 $maxWidth: 1440;
-$maxWidthContainer: 1080;
+$maxWidthContainer: 1070;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -34,7 +34,7 @@ $md4: 479.98;
 $mainColor: #252b42;
 $buttonColor: #23a6f0;
 $secondTextColor: #737373;
-$lightTextColot: #ffffff;
+$lightTextColor: #ffffff;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
@@ -65,13 +65,11 @@ body {
 ._container {
     max-width: $maxWidthContainer + px;
     margin: 0 auto;
+
     @media (max-width: $md1+px) {
-        max-width: 970px;
-    }
-    @media (max-width: $md2+px) {
         max-width: 750px;
     }
-    @media (max-width: $md3+px) {
+    @media (max-width: $md2+px) {
         max-width: none;
         padding: 0 10px;
     }
