@@ -66,18 +66,27 @@
     &__users {
         background: #8ec2f2;
         padding: 100px;
+        @media (max-width: $md3+px) {
+            padding: 35px 42px 80px;
+        }
     }
 
     // .industry__users-title
 
     &__users-title {
-        color: $lightTextColor;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 57 / 40 * 100%;
-        letter-spacing: 0.2px;
-        text-align: center;
         margin: 0px 0px 10px 0px;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    // .industry__users-title-mobile
+
+    &__users-title-mobile {
+        margin: 0px 0px 10px 0px;
+        @media (min-width: $md3+px) {
+            display: none;
+        }
     }
 
     // .industry__users-subtitle
@@ -96,13 +105,23 @@
 
     &__users-row {
         display: flex;
-        margin: 0px auto;
+        margin: 0px -68.5px;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
 
     // .industry__users-column
 
     &__users-column {
         flex: 0 1 50%;
+        padding: 0px 68.5px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 30px 0px;
+            &:last-child {
+                margin: 0;
+            }
+        }
     }
 
     // .industry__users-item
@@ -121,6 +140,9 @@
         width: 72px;
         top: -15px;
         left: -90px;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 
     &__users-foto img {
@@ -132,6 +154,9 @@
 
     &__users-item-body {
         margin: 0px 0px 0px -40px;
+        @media (max-width: $md3+px) {
+            margin: 0;
+        }
     }
 
     // .industry__users-name
@@ -171,17 +196,30 @@
     }
 }
 
+.title-industry {
+    color: $lightTextColor;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57 / 40 * 100%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
 .users {
     // .users__rating
 
     &__rating {
-        font-size: 32px;
+        font-size: 24px;
         display: flex;
         justify-content: flex-start;
         color: #f3cd03;
         margin: 0px 0px 15px 0px;
     }
     &__rating-item {
+        padding: 0px 5px 0px 0px;
+    }
+    &__rating-item:last-child {
+        padding: 0px 0px 0px 0px;
     }
 }
 
