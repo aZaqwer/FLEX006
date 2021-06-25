@@ -58,6 +58,22 @@
     }
 }
 
+._icon-mind,
+._icon-life,
+._icon-satisfaction {
+    @media (max-width: $md3+px) {
+        display: none;
+    }
+}
+
+._icon-resiz {
+    color: $buttonColor;
+    font-size: 40px;
+    margin: 0px 0px 30px 0px;
+    @media (min-width: $md3+px) {
+        display: none;
+    }
+}
 //====================================================================================================
 
 .industry {
