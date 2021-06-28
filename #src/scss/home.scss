@@ -625,13 +625,22 @@
 
 //====================================================================================================
 .contact {
-    background: url("../img/bg-contact.jpg") 0 0 no-repeat;
+    background: linear-gradient(89.83deg, #ffffff 14.24%, #ffffff 14.25%, rgba(255, 255, 255, 0) 99.55%),
+        url("../img/bg-contact.jpg") 0 0 / 100% 100% no-repeat;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 195px;
+    @media (max-width: $md3+px) {
+        background: url("../img/bg-contact.jpg") -680px 0 / auto 100% no-repeat;
+        padding: 20px 40px;
+    }
     // .contact__content
     &__content {
         width: 600px;
+        @media (max-width: $md3+px) {
+            max-width: 100%;
+            padding: 45px 20px;
+        }
     }
 
     &__name {
@@ -649,6 +658,9 @@
         line-height: 57 / 40 * 100%;
         letter-spacing: 0.2px;
         margin: 0px 0px 40px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 45px 0px;
+        }
     }
 
     // .contact__form
@@ -666,6 +678,9 @@
     &__item {
         display: flex;
         margin: 0px 0px 20px 0px;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
 
     &__fullname {
@@ -677,7 +692,10 @@
         color: $secondTextColor;
         background: #f9f9f9;
         border: 1px solid #e6e6e6;
-        border-radius: 5px;
+        border-radius: 5px !important;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 20px 0px;
+        }
     }
 
     // .contact__email
@@ -690,7 +708,7 @@
         color: $secondTextColor;
         background: #f9f9f9;
         border: 1px solid #e6e6e6;
-        border-radius: 5px;
+        border-radius: 5px !important;
     }
 
     // .contact__select-item
@@ -698,6 +716,9 @@
     &__select-item {
         flex: 1 1 50%;
         margin: 0px 20px 0px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 20px 0px;
+        }
     }
 
     &__select-item:last-child {
@@ -727,13 +748,32 @@
     // .contact__button
 
     &__button {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        height: 52px;
+        padding: 0px 40px;
+        border-radius: 5px;
+        @media (max-width: $md3+px) {
+            display: block;
+            height: 52px;
+            line-height: 52px;
+            text-align: center;
+        }
     }
 }
 
 textarea.input {
     background: #f9f9f9;
     border: 1px solid #bdbdbd;
-    border-radius: 5px;
+    border-radius: 5px !important;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #bdbdbd;
+    height: 140px;
 }
 
 .select__value {
