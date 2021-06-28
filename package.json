@@ -25,6 +25,7 @@
 		"gulp-newer": "latest",
 		"gulp-plumber": "latest",
 		"gulp-rename": "latest",
+		"sass": "latest",
 		"gulp-ttf2woff": "latest",
 		"gulp-ttf2woff2": "latest"
 	}
