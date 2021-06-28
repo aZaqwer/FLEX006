@@ -235,6 +235,50 @@
                     </div>
                 </div>
             </section>
+
+            <section class="contact">
+                <div class="contact__content">
+                    <div class="contact__name">Contact Us</div>
+                    <div class="contact__title">Make an Appointment</div>
+                    <div class="contact__form">
+                        <form action="#" id="form" class="contact__form-items">
+                            <div class="contact__item">
+                                <input id="full-name" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    data-value="Full Name *" class="input contact__fullname">
+                                <input id="email" autocomplete="off" type="email" name="form[]" data-error="Ошибка"
+                                    data-value="Email *" class="input _email contact__email">
+                            </div>
+                            <div class="contact__item select__items">
+                                <div class="contact__select-item">
+                                    <select name="form[]" class="contact__select">
+                                        <option value="1" selected="selected">Пункт №1</option>
+                                        <option value="2">Пункт №2</option>
+                                        <option value="3">Пункт №3</option>
+                                        <option value="4">Пункт №4</option>
+                                    </select>
+                                </div>
+                                <div class="contact__select-item">
+                                    <select name="form[]" class="contact__time">
+                                        <option value="1" selected="selected">4:00 Available</option>
+                                        <option value="2">5:00 Available</option>
+                                        <option value="3">6:00 Available</option>
+                                        <option value="4">7:00 Available</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <textarea autocomplete="off" name="form[]" data-value="Message" data-error="Ошибка"
+                                    class="input contact__message" rows="10">
+                                </textarea>
+                            </div>
+
+                            <div class="contact__item">
+                                <a href="" class="contact__button button">Book Appointment</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
         @@include('_footer.html',{})
     </div>

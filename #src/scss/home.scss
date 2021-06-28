@@ -622,3 +622,127 @@
         color: #8ec2f2;
     }
 }
+
+//====================================================================================================
+.contact {
+    background: url("../img/bg-contact.jpg") 0 0 no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 195px;
+    // .contact__content
+    &__content {
+        width: 600px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24 / 16 * 100%;
+        letter-spacing: 0.1px;
+    }
+
+    // .contact__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57 / 40 * 100%;
+        letter-spacing: 0.2px;
+        margin: 0px 0px 40px 0px;
+    }
+
+    // .contact__form
+
+    &__form {
+    }
+
+    // .contact__form-items
+
+    &__form-items {
+    }
+
+    // .contact__item
+
+    &__item {
+        display: flex;
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__fullname {
+        height: 50px;
+        margin: 0px 20px 0px 0px;
+        font-size: 14px;
+        line-height: 25 / 14 * 100%;
+        letter-spacing: 0.2px;
+        color: $secondTextColor;
+        background: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+    }
+
+    // .contact__email
+
+    &__email {
+        height: 50px;
+        font-size: 14px;
+        line-height: 25 / 14 * 100%;
+        letter-spacing: 0.2px;
+        color: $secondTextColor;
+        background: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+    }
+
+    // .contact__select-item
+
+    &__select-item {
+        flex: 1 1 50%;
+        margin: 0px 20px 0px 0px;
+    }
+
+    &__select-item:last-child {
+        margin: 0;
+    }
+
+    // .contact__select
+
+    &__select {
+    }
+
+    // .contact__time
+
+    &__time {
+    }
+
+    // .contact__input
+
+    &__input {
+    }
+
+    // .contact__message
+
+    &__message {
+    }
+
+    // .contact__button
+
+    &__button {
+    }
+}
+
+textarea.input {
+    background: #f9f9f9;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.select__value {
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: $secondTextColor;
+    background: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+//====================================================================================================
