@@ -1,5 +1,92 @@
-footer{}
+footer {
+}
 //====================================================================================================
+.footer {
+    // .footer__content
+    &__content {
+    }
+
+    // .footer__menu
+
+    &__menu {
+        background: $mainColor;
+        padding: 50px;
+        color: $lightTextColor;
+    }
+
+    // .footer__menu-row
+
+    &__menu-row {
+        display: flex;
+    }
+
+    // .footer__menu-column
+
+    &__menu-column {
+        flex: 1 1 20%;
+    }
+
+    // .footer__menu-title
+
+    &__menu-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24 / 16 * 100%;
+        letter-spacing: 0.1px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    // .footer__menu-list
+
+    &__menu-list {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24 / 14 * 100%;
+        letter-spacing: 0.2px;
+    }
+
+    // .footer__menu-item
+
+    &__menu-item {
+        margin: 0px 0px 10px 0px;
+        span {
+            img {
+                margin: 0px 10px 12px 0px;
+            }
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    // .footer__menu-link
+
+    &__menu-link {
+        color: $lightTextColor;
+    }
+
+    // .footer__text
+
+    &__text {
+        background-color: $lightTextColor;
+    }
+
+    // .footer__text-made
+
+    &__text-made {
+    }
+
+    // .footer__text-social
+
+    &__text-social {
+    }
+}
+
+.social {
+    // .social__item
+
+    &__item {
+    }
+}
 
 //====================================================================================================
-

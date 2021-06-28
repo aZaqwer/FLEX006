@@ -626,7 +626,7 @@
 //====================================================================================================
 .contact {
     background: linear-gradient(89.83deg, #ffffff 14.24%, #ffffff 14.25%, rgba(255, 255, 255, 0) 99.55%),
-        url("../img/bg-contact.jpg") 0 0 / auto 100% no-repeat;
+        url("../img/bg-contact.jpg") 0 0 / cover no-repeat;
     padding-top: 50px;
     padding-bottom: 50px;
     //padding-left: 195px;
@@ -721,10 +721,9 @@
         @media (max-width: $md3+px) {
             margin: 0px 0px 20px 0px;
         }
-    }
-
-    &__select-item:last-child {
-        margin: 0;
+        &:last-child {
+            margin: 0;
+        }
     }
 
     // .contact__select
