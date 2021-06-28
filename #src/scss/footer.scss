@@ -18,6 +18,9 @@ footer {
 
     &__menu-row {
         display: flex;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
 
     // .footer__menu-column
@@ -69,16 +72,34 @@ footer {
 
     &__text {
         background-color: $lightTextColor;
+        padding: 25px 50px;
+        display: flex;
+    }
+
+    // .footer__text-item
+
+    &__text-item {
+        flex: 1 0 50%;
     }
 
     // .footer__text-made
 
     &__text-made {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: $secondTextColor;
     }
 
     // .footer__text-social
 
     &__text-social {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 24px;
+        a {
+            color: $buttonColor;
+        }
     }
 }
 
@@ -86,6 +107,10 @@ footer {
     // .social__item
 
     &__item {
+        margin: 0px 20px 0px 0px;
+        &:last-child {
+            margin: 0;
+        }
     }
 }
 
