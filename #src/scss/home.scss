@@ -360,6 +360,9 @@
     &__content {
         width: 1155px;
         margin: 0px auto;
+        @media (max-width: $md3+px) {
+            width: 100%;
+        }
     }
 
     // .pricing__title
@@ -378,6 +381,10 @@
 
     &__row {
         display: flex;
+        margin: 0px -15px;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
 
     // .pricing__column
@@ -385,6 +392,10 @@
     &__column {
         flex: 0 1 33.33333%;
         margin: 0px auto;
+        padding: 0px 15px;
+        @media (max-width: $md3+px) {
+            margin: 0px 42.5px 83px 42.5px;
+        }
     }
 
     // .pricing__items
@@ -396,6 +407,9 @@
         padding: 50px 40px;
         display: flex;
         flex-direction: column;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
 }
 
@@ -409,17 +423,21 @@
         letter-spacing: 0.1px;
         align-self: center;
         margin: 0px 0px 35px 0px;
+        @media (max-width: $md3+px) {
+            text-align: center;
+        }
     }
 
     // .item__subtitle
 
     &__price-subtitle {
+        text-align: center;
         font-weight: 700;
         font-size: 16px;
         line-height: 24 / 16 * 100%;
         align-self: center;
         letter-spacing: 0.1px;
-        margin: 0px 0px 35px 0px;
+        margin: 0px 40px 35px 40px;
     }
 
     // .item__price
@@ -450,8 +468,11 @@
 
     &__price-button {
         display: inline-flex;
+        height: 52px;
         align-self: center;
         margin: 0px 0px 35px 0px;
+        padding: 0px 80px;
+        border-radius: 5px;
     }
 
     // .item__price-list
@@ -468,5 +489,40 @@
 
     &__price-list:last-child {
         margin: 0;
+    }
+
+    // .item__price-new
+
+    &__price-new {
+        text-align: right;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32 / 24 * 100%;
+        letter-spacing: 0.1px;
+        color: $lightTextColor;
+        margin: -90px -20px 0px 0px;
+        span {
+            display: inline-block;
+            text-transform: uppercase;
+            background: #e77c40;
+            border-radius: 50px;
+            padding: 29px 15px;
+        }
+    }
+}
+
+.price {
+    // .price__list-green
+
+    &__list-green {
+        background: url("../img/icons/check-green.png") left no-repeat;
+        padding: 10px 0px 10px 42px;
+    }
+
+    // .price__list-gray
+
+    &__list-gray {
+        background: url("../img/icons/check-gray.png") left no-repeat;
+        padding: 10px 0px 10px 42px;
     }
 }
