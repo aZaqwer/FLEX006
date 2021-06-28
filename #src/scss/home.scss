@@ -626,10 +626,10 @@
 //====================================================================================================
 .contact {
     background: linear-gradient(89.83deg, #ffffff 14.24%, #ffffff 14.25%, rgba(255, 255, 255, 0) 99.55%),
-        url("../img/bg-contact.jpg") 0 0 / 100% 100% no-repeat;
+        url("../img/bg-contact.jpg") 0 0 / auto 100% no-repeat;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 195px;
+    //padding-left: 195px;
     @media (max-width: $md3+px) {
         background: url("../img/bg-contact.jpg") -680px 0 / auto 100% no-repeat;
         padding: 20px 40px;
@@ -637,9 +637,11 @@
     // .contact__content
     &__content {
         width: 600px;
+        margin: 0px 0px 0px 195px;
         @media (max-width: $md3+px) {
             max-width: 100%;
             padding: 45px 20px;
+            margin: 0;
         }
     }
 
@@ -784,5 +786,88 @@ textarea.input {
     background: #f9f9f9;
     border: 1px solid #dddddd;
     border-radius: 5px;
+}
+//====================================================================================================
+.consulting {
+    // .consulting__content
+
+    &__content {
+        margin: 0px 0px 0px 195px;
+        @media (max-width: $md3+px) {
+            margin: 0px 30px;
+        }
+    }
+
+    // .consulting__row
+
+    &__row {
+        display: flex;
+        margin: 40px 0px;
+        @media (max-width: $md3+px) {
+            display: block;
+            padding: 20px 60px;
+        }
+    }
+
+    // .consulting__column
+
+    &__column {
+        flex: 1 1 50%;
+    }
+
+    // .consulting__body
+
+    &__body {
+    }
+
+    // .consulting__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32 / 24 * 100%;
+        letter-spacing: 0.1px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .consulting__text
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20 / 14 * 100%;
+        letter-spacing: 0.2px;
+        color: $secondTextColor;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 50px 0px;
+            padding: 0px 40px 0px 0px;
+        }
+    }
+
+    // .consulting__item
+
+    &__item {
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
+    }
+    // .consulting__button
+
+    &__button {
+        height: 52px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22 / 14 * 100%;
+        letter-spacing: 0.2px;
+        color: $lightTextColor;
+        padding: 0px 40px;
+        margin: 0px 195px 0px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0;
+        }
+    }
 }
 //====================================================================================================
