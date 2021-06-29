@@ -62,6 +62,22 @@ footer {
         }
     }
 
+    // .footer__menu-item-send
+
+    &__menu-item-send {
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    // .footer__menu-item-send-mobile
+
+    &__menu-item-send-mobile {
+        @media (min-width: $md3+px) {
+            display: none;
+        }
+    }
+
     // .footer__menu-link
 
     &__menu-link {
